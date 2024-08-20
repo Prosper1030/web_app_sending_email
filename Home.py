@@ -16,7 +16,7 @@ with col2:
 
 text = """
 Below you can find some of the apps I have built in Python.
-Nice to see you.
+Nice to meet you.
 """
 st.write(text)
 
@@ -28,7 +28,7 @@ with col3:
         st.title(row["title"])
         st.write(row["description"])
         st.image("images/"+row["image"])
-        st.write(f"[Source Code]({row['url']})")    #[]()之間不能有空格
+        st.write(f"[Source Code]({row['url']})")    # []()之間不能有空格，此為markdown語法
 
 with col4:
     for index, row in df[10:].iterrows():
